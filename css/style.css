@@ -13,11 +13,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    
+ body{
+    height: 100%;
     background-color: var(--light);
     color: black;
     font-size: 1rem;
+  
   
 }
 a{
@@ -34,10 +35,9 @@ a:hover{
 .img_principal {
     position: relative;
     z-index: -1;
-    height: 30rem;
     width: 100%;
+    height: 100vh;
     object-fit: cover;
-    width: 100%;
     margin: 0;
   }
 
@@ -47,10 +47,15 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    font-size: 4rem;
+    font-size: 10rem;
     font-weight: bold;
     color: white;
     border-bottom: 0.7rem solid white;
+  }@media (max-width:800px){
+    h1{
+        font-size: 5rem;
+        transform: translate(-50%, -10%);
+    }
   }
 
   .grid-6{
@@ -77,18 +82,13 @@ a:hover{
     .grid-6{
         grid-template-columns:repeat(auto-fit, minmax(24rem, 1fr)) ;
     }
-    .artist__img{
-        width: 100%;
-        aspect-ratio: 1/0.7;
-        object-fit: cover;
-    }
+   
     .parrafo2{
       
         width: 80%;
     }
   
 }
-
 
 
 
